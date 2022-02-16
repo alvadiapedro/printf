@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:35:57 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/15 14:54:39 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/16 15:00:56 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,4 +17,13 @@ int	ft_putchar(char c)
 	write(1, &c, 1);
 	return (1);
 }
-//se der erro experimentar criar um int len e retornar com mais 1
+/*
+#include <unistd.h>
+#include <stdio.h>
+int	main(void)
+{
+	int	len = 0;
+	len+= ft_putchar('x');
+	printf("len = %i", len);
+	return (0);
+}*/

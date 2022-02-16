@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:15:04 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/15 14:53:42 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/16 15:25:19 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	ft_printf(const char *input, ...)
 {
 	int	len;
+	va_list	args;
 
 	len = 0;
 	va_start(args, input);
@@ -33,7 +34,7 @@ int	ft_print_to_percent(const char *input, va_list args)
 	{
 		if (*input == '%')
 		{
-			len += ft_check_spec(input++);
+			len += ft_check_spec(input++, args);
 			input ++;
 		}
 		else
@@ -44,4 +45,11 @@ int	ft_print_to_percent(const char *input, va_list args)
 	}
 	return (len);
 }
-//fazer printf.h e o makefile
+
+int	main(void)
+{
+	char a = 'a';
+	char *s = "test";
+	ft_printf("this is %c %s!\n", a, s);
+	return (0);
+}

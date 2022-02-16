@@ -1,25 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putint.c                                        :+:      :+:    :+:   */
+/*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/15 14:28:54 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/16 15:08:01 by pmiranda         ###   ########.fr       */
+/*   Created: 2022/02/16 16:36:15 by pmiranda          #+#    #+#             */
+/*   Updated: 2022/02/16 16:41:25 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-int	ft_putint(int n)
+int	ft_putptr(void *ptr)
 {
-	int	i;
-	char *str;
-
-	i = 0;
-	str = ft_itoa(n);
-	while (str[i] != '\0')
-		ft_putchar(str[i++]);
-	return (ft_strlen(str));
+//esta funcao recebe um pointer que pode ser qualquer coisa	
 }
