@@ -44,3 +44,4 @@ int	ft_print_to_percent(const char *input, va_list args)
 	}
 	return (len);
 }
+//fazer printf.h e o makefile

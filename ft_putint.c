@@ -23,3 +23,4 @@ int	ft_putint(int n)
 		ft_putchar(str[i++]);
 	return (ft_strlen(str));
 }
+//CORRIGIR!!! o numero pode ser menor que zero

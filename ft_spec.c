@@ -22,11 +22,11 @@ int	ft_check_spec(const char *input, va_list args)
 	else if (*input == 's')
 		len += ft_putstr(va_arg(args, char *));
 	else if (*input == 'p')
-		len += ft_putptr(va_arg);// fazer este depois
+		len += ft_putptr(va_arg(args, //*));// como é que defino o pointer para chamar esta função?
 	else if (*input == 'd' || *input == 'i')
 		len += ft_putint(va_arg(args, int));
 	else if (*input == 'u') 
-		len += ft_putunsint(va_arg(args, unsigned int));//fazer um itoa que de para unsigned int
+		len += ft_putunsint(va_arg(args, unsigned int));
 	else if (*input == 'x')
 		len += ft_//fazer este hoje
 	else if (*input == 'X')

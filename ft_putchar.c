@@ -17,3 +17,4 @@ int	ft_putchar(char c)
 	write(1, &c, 1);
 	return (1);
 }
+//se der erro experimentar criar um int len e retornar com mais 1
