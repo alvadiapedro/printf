@@ -10,7 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_putptr(void *ptr)
+#include "ft_printf.h"
+
+int	ft_putptr((unsigned long)void *ptr)
 {
-//esta funcao recebe um pointer que pode ser qualquer coisa	
+    int	len;
+
+    len = 0;
+    if (*ptr == )
+    {
+
+    }
+    return (len);
 }

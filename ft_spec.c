@@ -18,20 +18,20 @@ int	ft_check_spec(const char *input, va_list args)
 
 	len = 0;
 	if (*input == 'c')
-		len += ft_putchar(va_arg(args, int));
+	    len += ft_putchar(va_arg(args, int));
 	else if (*input == 's')
-		len += ft_putstr(va_arg(args, char *));
-	else if (*input == 'p')
-		len += ft_putptr(va_arg(args, void *));
+	    len += ft_putstr(va_arg(args, char *));
+//	else if (*input == 'p')
+//	    len += ft_putptr((unsigned long)va_arg(args, void *));
 	else if (*input == 'd' || *input == 'i')
-		len += ft_putint(va_arg(args, int));
-	else if (*input == 'u') 
-		len += ft_putunsint(va_arg(args, unsigned int));
+	    len += ft_putint(va_arg(args, int));
+//	else if (*input == 'u') 
+//	    len += ft_putunsint(va_arg(args, unsigned int));
 	/*else if (*input == 'x')
-		len += ft_//fazer este hoje
+	  len += ft_//fazer este hoje
 	else if (*input == 'X')
-		len += ft_//fazer este hoje*/
+	len += ft_//fazer este hoje*/
 	else if (*input == '%')
-		len += ft_putchar('%');
+	    len += ft_putchar('%');
 	return (len);
 }

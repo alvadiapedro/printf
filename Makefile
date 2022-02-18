@@ -20,25 +20,18 @@ OBJ=$(SRC:.c=.o)
 
 LIBFT=libft
 
-HEAD=ft_printf.h ../libft/libft.h //nem isto
+HEAD=ft_printf.h
 
 all: $(NAME)
 
 $(NAME): $(OBJ) $(HEAD)
-	make -C $(LIBFT) n fiz isto
-	cp libft/libft.a ./$(NAME) nem isto
 	ar rcs $(NAME) $(OBJ)
-
-.o.c:
-	@$(CC) $(CFLAGS) -I $(HEAD) -o $@ -c $< n fui eu que fiz isto
 
 clean:
 	rm -rf $(OBJ)
-	make clean -C $(LIBFT) nem isto
 
 fclean: clean
 	rm -rf $(NAME)
-	make fclean -C $(LIBFT) nem isto
 
 re: fclean all
 

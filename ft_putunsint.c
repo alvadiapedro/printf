@@ -17,9 +17,7 @@ int	ft_nbrlen(unsigned int n)
 	int	nlen;
 
 	nlen = 0;
-	if (n < 10 && n > 0)
-		nlen++;
-	while (n / 10 > 0)
+	while (n != 0)
 	{
 		n /= 10;
 		nlen++;
@@ -30,24 +28,25 @@ int	ft_nbrlen(unsigned int n)
 int	ft_putunsint(unsigned int n)
 {
 	int		len;
-	char	*str;
-	int		nbr;
+	char		*str;
+	unsigned int		nbr;
 	int		i;
 
 	len = 0;
 	nbr = n;
 	i = ft_nbrlen(n);
-	str = NULL;
-	if (n >= 0 && n <= 9)
-		*str = n + '0';
-	else
-		while (n / 10 > 0 && i > -1)
-		{
-			str[i] = nbr % 10;
-			i--;
-			n /= 10;
-		}
-	str[ft_strlen(str)] = '\0';
+	str = (char *)malloc(sizeof(char) * (i + 1));
+	if (!str)
+	    return (0);
+	str[i] = '\0';
+	while (n != 0)
+	{
+		str[i] = nbr % 10 + '0';
+		i--;
+		n /= 10;
+	}
 	len += ft_putstr(str);
+	if (n == '0')
+		len += ft_putchar('0');
 	return (len);
 }
