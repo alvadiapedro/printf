@@ -45,11 +45,11 @@ int	ft_print_to_percent(const char *input, va_list args)
 	}
 	return (len);
 }
-
+/*
 int	main(void)
 {
 	char a = 'a';
 	char *s = "test";
 	ft_printf("this is %c %s!\n", a, s);
 	return (0);
-}
+}*/
