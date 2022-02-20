@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_nbrlen(unsigned int n)
+int	ft_nlen(unsigned int n)
 {
 	int	nlen;
 
@@ -34,7 +34,7 @@ int	ft_putunsint(unsigned int n)
 
 	len = 0;
 	nbr = n;
-	i = ft_nbrlen(n);
+	i = ft_nlen(n);
 	str = (char *)malloc(sizeof(char) * (i + 1));
 	if (!str)
 	    return (0);

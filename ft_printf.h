@@ -22,7 +22,7 @@ int		ft_print_to_percent(const char *input, va_list args);
 int		ft_putchar(char c);
 int		ft_putint(int n);
 int		ft_putstr(char *str);
-int		ft_nbrlen(unsigned int n);
+int		ft_nlen(unsigned int n);
 int		ft_putunsint(unsigned int n);
 int		ft_putptr(unsigned long n);
 int		ft_puthex(unsigned int n, int x);
