@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 10:45:08 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/18 11:45:32 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:10:45 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	ft_change_base(unsigned int n, int x)
 	char	*hex2;
 
 	hex1 = "0123456789abcdef\0";
-	hex2 = "0123456789ABCEDF\0";
+	hex2 = "0123456789ABCDEF\0";
 	if (x == 1)
 		return (hex2[n]);
 	return (hex1[n]);
