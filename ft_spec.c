@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:15:10 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/18 12:02:05 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:32:36 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_check_spec(const char *input, va_list args)
 	else if (*input == 'p')
 	{
 		len += ft_putstr("0x");
-		len += ft_putptr(va_arg(args, unsigned long));
+		return (ft_putptr(va_arg(args, unsigned long)));
 	}
 	else if (*input == 'd' || *input == 'i')
 	    len += ft_putint(va_arg(args, int));

@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 14:51:50 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/22 13:03:55 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/22 13:29:42 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ int		ft_putchar(char c);
 int		ft_putint(int n);
 int		ft_putstr(char *str);
 int		ft_nlen(unsigned int n);
+char	*ft_utoa(unsigned int n);
 int		ft_putunsint(unsigned int n);
 int		ft_putptr(unsigned long n);
 int		ft_puthex(unsigned int n, int x);
