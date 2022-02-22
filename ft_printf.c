@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:15:04 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/18 11:59:46 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/22 12:32:16 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,35 +21,28 @@ int	ft_printf(const char *input, ...)
 	va_start(args, input);
 	len += ft_print_to_percent(input, args);
 	va_end(args);
-	free((char *)input);
 	return (len);
 }
 
 int	ft_print_to_percent(const char *input, va_list args)
 {
 	int	len;
+	int	i;
 
 	len = 0;
-	while (*input)
+	i = 0;
+	while (input[i])
 	{
-		if (*input == '%')
+		if (input[i] == '%')
 		{
-			len += ft_check_spec(input++, args);
-			input ++;
+			len += ft_check_spec(&input[i + 1], args);
+			i += 2;
 		}
 		else
 		{
-			len += ft_putchar(*input);
-			input++;
+			len += ft_putchar(input[i]);
+			i++;
 		}
 	}
 	return (len);
 }
-/*
-int	main(void)
-{
-	char a = 'a';
-	char *s = "test";
-	ft_printf("this is %c %s!\n", a, s);
-	return (0);
-}*/
