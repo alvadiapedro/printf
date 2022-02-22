@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 14:15:04 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/22 12:32:16 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:15:45 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_printf(const char *input, ...)
 {
-	int	len;
+	int		len;
 	va_list	args;
 
 	len = 0;

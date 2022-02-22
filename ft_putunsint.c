@@ -6,7 +6,7 @@
 /*   By: pmiranda <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 14:39:39 by pmiranda          #+#    #+#             */
-/*   Updated: 2022/02/22 13:30:26 by pmiranda         ###   ########.fr       */
+/*   Updated: 2022/02/22 14:18:39 by pmiranda         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_utoa(unsigned int n)
 int	ft_putunsint(unsigned int n)
 {
 	int		len;
-	char		*str;
+	char	*str;
 
 	len = 0;
 	if (n == 0)
